@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <style>
+        body{
+            background-color: rgb(205, 237, 249);
+        }
+        .chart-container {
+            /* Overall styles for the chart container */
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+  <h2>Bar Chart Stats - <span id="selected-month">
+    <select>
+        <option value="">Select Month</option>
+        <option value="Jan">January</option>
+        <option value="Feb">February</option>
+        <option value="Mar">March</option>
+        <option value="Apr">April</option>
+        <option value="May">May</option>
+        <option value="Jun">June</option>
+        <option value="Jul">July</option>
+        <option value="Aug">August</option>
+        <option value="Sep">September</option>
+        <option value="Oct">Octomber</option>
+        <option value="Nov">November</option>
+        <option value="Dec">December</option>
+    </select>
+</span></h2>
+  <canvas id="myChart"></canvas>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <style>
+        .statistics-card {
+  /* Overall styles for the card */
+  background-color: #86d8eb;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-card h2 {
+  /* Styles for the heading */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.statistics-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.statistics-card ul li {
+  margin-bottom: 5px;
+}
+
+.statistics-card ul li span {
+  font-weight: bold;
+}
+span[value="s3"]{
+    margin-left:100px;
+}
+span[value="s2"]{
+    margin-left:127px;
+}
+span[value="s1"]{
+    margin-left:162px;
+}
+    </style>
+</head>
+<body>
+    <div class="statistics-card">
+        <h2>Statistics - 
+            <select>
+                <option value="" >Select Month</option>
+                <option value="Jan" >January</option>
+                <option value="Feb" >February</option>
+                <option value="Mar" >March</option>
+                <option value="Apr" >April</option>
+                <option value="May" >May</option>
+                <option value="Jun" >June</option>
+                <option value="Jul" >July</option>
+                <option value="Aug" >August</option>
+                <option value="Sep" >September</option>
+                <option value="Oct" >Octomber</option>
+                <option value="Nov" >November</option>
+                <option value="Dec" >December</option>
+            </select></h2>
+            <div class="statistics-card">
+                <div class="statistic">
+                  <p>Total Sale
+                  <span id="total" value="s1">0</span>
+                  </p>
+                </div>
+                <div class="statistic">
+                  <p>Total Sold Item <span id="total" value="s2">0</span></p>
+                </div>
+                <div class="statistic">
+                  <p>Total Not Sold Item
+                  <span id="total" value="s3">0</span>
+                  </p>
+                </div>
+              </div>
+      </div>
+</body>
+</html>
